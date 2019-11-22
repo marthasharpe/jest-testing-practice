@@ -2,12 +2,16 @@ import React from 'react';
 import './styles.scss';
 import Logo from './../../assets/web-slinger.png';
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <header>
+        <header data-test='headerComponent'>
             <div className='wrap'>
                 <div className='logo'>
-                    <img src={Logo} alt='web-slinger' />
+                    <img
+                        data-test='logoIMG'
+                        src={Logo}
+                        alt='web-slinger'
+                    />
                 </div>
             </div>
         </header>
